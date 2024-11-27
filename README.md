@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+Product Listing Application
+Overview
+This is a simple product listing application built using React. It allows users to view a list of products, filter them by search terms, and sort them by price (ascending or descending). The application supports pagination and lazy loading for better performance when displaying large datasets.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Product Listing: Displays products with details such as title, price, and image.
+Pagination: Divides the product list into pages with a specified number of products per page.
+Search: Filters products based on a search term that matches the product title.
+Sorting: Sorts products by price in ascending or descending order.
+Lazy Loading: Loads product images lazily to improve performance.
+Technologies Used
+React: JavaScript library for building user interfaces.
+React Hooks (useState, useEffect): For managing state and side effects in functional components.
+Bootstrap: For responsive design and basic styling.
+CSS: Custom styles for specific components.
+API Integration: Fetch products from a backend (using a placeholder API for now).
+Project Structure
+The project is organized into multiple components:
 
-## Available Scripts
+App.js: The main entry point that renders the ProductList component.
+ProductList.js: Manages the state of products, handles filtering, sorting, pagination, and rendering the ProductCard components.
+ProductCard.js: Displays individual product information, including image, title, and price.
+FilterSort.js: Provides a search bar and sorting options to filter and sort the products.
+Loader.js: A loading indicator displayed while data is being fetched.
+Installation
+To run the project locally, follow these steps:
 
-In the project directory, you can run:
+Clone the repository:
 
-### `npm start`
+bash
+Copy code
+git clone https://github.com/your-username/product-listing.git
+cd product-listing
+Install dependencies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm install
+Start the application:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+npm start
+This will start the development server, and you can view the app at http://localhost:3000.
 
-### `npm test`
+Usage
+Filtering and Sorting
+Search: Enter a term in the search bar to filter products by title.
+Sorting: Choose "Price: Low to High" or "Price: High to Low" from the dropdown to sort products by their price.
+Apply Filter: Click the "Apply" button to apply the search and sorting filters.
+Pagination
+The product list is paginated. You can navigate through pages by clicking on the page numbers.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Lazy Loading
+The images of products are loaded lazily to improve the initial load time of the page. This means that images are only loaded when they come into the viewport.
 
-### `npm run build`
+Component Breakdown
+App.js
+This is the main component that renders the ProductList component inside a container. It serves as the entry point for the app.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ProductList.js
+This component manages the list of products, handles filtering, sorting, and pagination:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+State: Manages the products, filtered products, loading state, and pagination.
+Effect: Fetches products using the useEffect hook when the component is mounted.
+Pagination: Computes the products to display based on the current page and the number of products per page.
+ProductCard.js
+This component is responsible for rendering an individual product. It displays the product image, title, price, and a button to add the product to the cart.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+FilterSort.js
+This component provides the UI for filtering and sorting the products. It includes:
 
-### `npm run eject`
+Search bar: For searching products by title.
+Sort dropdown: For sorting products by price.
+Apply button: To apply the selected filters and sorting.
+Loader.js
+A simple component that displays a loading spinner when the products are being fetched.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Future Improvements
+Backend Integration: Currently, the product data is fetched from a static service, but in the future, this can be integrated with a real backend service.
+Cart Functionality: Implement functionality to add products to a shopping cart.
+Responsive Design: Further improve mobile responsiveness for a better user experience on all devices.
+Advanced Filtering: Add more filter options (e.g., by category, rating)
