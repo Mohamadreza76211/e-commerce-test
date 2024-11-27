@@ -6,7 +6,7 @@ import Loader from "./Loader";
 import "./styles/ProductList.css";
 import "./styles/FilterSort.css";
 import "./styles/Loader.css";
-
+//
 const ProductList = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
