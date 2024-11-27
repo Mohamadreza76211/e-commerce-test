@@ -1,42 +1,59 @@
-Product Listing Application
-Overview
-This is a simple Product Listing Application built with React. It allows users to:
+# Product Listing Application
 
-View a list of products
-Filter products by search terms
-Sort products by price (ascending or descending)
-Navigate through pages using pagination
-Enjoy improved performance with lazy loading for images, especially with large datasets
-Features
-Product Listing: Displays products with details such as title, price, and image.
-Pagination: Divides the product list into pages with a specified number of products per page.
-Search: Filters products based on a search term that matches the product title.
-Sorting: Sorts products by price in ascending or descending order.
-Lazy Loading: Loads product images lazily to improve performance and reduce initial load time.
-Technologies Used
-React: JavaScript library for building user interfaces.
-React Hooks (useState, useEffect): For managing state and side effects in functional components.
-Bootstrap: For responsive design and basic styling.
-CSS: Custom styles for specific components.
-API Integration: Fetch products from a backend (using a placeholder API for now).
-Project Structure
-The project is organized into multiple components:
+## Overview
 
-App.js: The main entry point that renders the ProductList component.
-ProductList.js: Manages the state of products, handles filtering, sorting, pagination, and rendering ProductCard components.
-ProductCard.js: Displays individual product information, including image, title, and price.
-FilterSort.js: Provides a search bar and sorting options to filter and sort the products.
-Loader.js: A loading indicator displayed while data is being fetched.
-Installation
+This is a simple **Product Listing Application** built using **React**. It allows users to:
+
+- View a list of products
+- Filter them by search terms
+- Sort products by price (ascending or descending)
+- Navigate through pages using pagination
+- Improve performance with lazy loading for images
+
+---
+
+## Features
+
+- **Product Listing**: Displays products with details such as title, price, and image.
+- **Pagination**: Divides the product list into pages with a specified number of products per page.
+- **Search**: Filters products based on a search term that matches the product title.
+- **Sorting**: Sorts products by price in ascending or descending order.
+- **Lazy Loading**: Loads product images lazily to improve performance and reduce initial load time.
+
+---
+
+## Technologies Used
+
+- **React**: JavaScript library for building user interfaces.
+- **React Hooks** (`useState`, `useEffect`): For managing state and side effects in functional components.
+- **Bootstrap**: For responsive design and basic styling.
+- **CSS**: Custom styles for specific components.
+- **API Integration**: Fetch products from a backend (using a placeholder API for now).
+
+---
+
+## Project Structure
+
+The project is organized into the following components:
+
+- **App.js**: The main entry point that renders the `ProductList` component.
+- **ProductList.js**: Manages the state of products, handles filtering, sorting, pagination, and rendering the `ProductCard` components.
+- **ProductCard.js**: Displays individual product information, including image, title, and price.
+- **FilterSort.js**: Provides a search bar and sorting options to filter and sort the products.
+- **Loader.js**: A loading indicator displayed while data is being fetched.
+
+---
+
+## Installation
+
 To run the project locally, follow these steps:
 
-Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/your-username/product-listing.git
-cd product-listing
-Install dependencies:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/product-listing.git
+   cd product-listing
+   Install dependencies:
+   ```
 
 bash
 Copy code
