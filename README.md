@@ -99,10 +99,3 @@ Sort Dropdown: For sorting products by price.
 Apply Button: To apply the selected filters and sorting.
 Loader.js
 A simple component that displays a loading spinner while products are being fetched.
-
-Future Improvements
-Backend Integration: Currently, product data is fetched from a static service. This could be integrated with a real backend service in the future.
-Cart Functionality: Implement functionality to add products to a shopping cart.
-Responsive Design: Improve mobile responsiveness for a better user experience across all devices.
-Advanced Filtering: Add more filter options (e.g., by category, rating).
-This enhanced Product Listing Application showcases the use of React in managing state, handling pagination, and applying lazy loading to improve performance.
